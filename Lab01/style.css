@@ -1,0 +1,23 @@
+html {
+      background-color: #DDBEAA;
+      height: 100vh;
+}
+
+body {
+      height: 100vh;
+      margin: 0;
+}
+
+.main-container {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      gap: 8px;
+}
+
+.link1 {color: #e63946}
+.link2 {color: #457b9d}
+.link3 {color: #32292f}
