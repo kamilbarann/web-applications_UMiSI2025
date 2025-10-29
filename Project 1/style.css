@@ -1,5 +1,5 @@
 html {
-      background-color: #DDBEAA;
+      background-color: #FBF3D1;
 }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -34,7 +34,7 @@ body {
       align-items: center;
       justify-content: space-between;
       padding: 12px 16px;
-      background: #f7eadf;
+      background: #DEDED1;
       border-bottom: 1px solid rgba(0, 0, 0, 0.8);
 }
 
@@ -86,9 +86,9 @@ body {
 
 .site-footer {
       padding: 12px 16px;
-      border-top: 1px solid #e5e7eb;
+      border-top: 1px solid #C5C7BC;
       text-align: center;
-      background: #fafafa;
+      background: #C5C7BC;
 }
 
 .sr-only {
