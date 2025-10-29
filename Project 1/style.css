@@ -2,8 +2,6 @@ html {
       background-color: #FBF3D1;
 }
 
-*, *::before, *::after { box-sizing: border-box; }
-
 body {
   margin: 0;
   min-height: 100vh;
@@ -234,7 +232,7 @@ input[type="text"], select, textarea {
     padding: 6px 10px;
     border-radius: 8px;
     border: 1px solid rgba(0,0,0,.12);
-    background: #fff3ea;
+    background: #DEDED1;
     cursor: pointer;
   }
 
@@ -245,7 +243,7 @@ input[type="text"], select, textarea {
     flex-direction: column;
     align-items: stretch;
     gap: 6px;
-    background: #fff3ea;
+    background: #DEDED1;
     border: 1px solid rgba(0,0,0,.12);
     border-radius: 12px;
     padding: 8px;
