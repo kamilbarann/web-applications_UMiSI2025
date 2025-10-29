@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kontakt</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="index.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html">Portfolio</a>
+      <nav class="site-nav" aria-label="Główne">
+        <button id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">
+          <span class="sr-only">Pokaz/ukryj menu</span> ☰
+        </button>
+        <ul id="nav-menu" class="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="galeria.html">Galeria</a></li>
+          <li><a href="contact.html">Kontakt</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="page">
+        <h1>Kontakt</h1>
+        <p>Wypełnij formularz, aby wysłać wiadomość.</p>
+
+        <form id="contactForm" class="contact-form" novalidate>
+          <div class="form-field">
+            <label for="email">E-mail</label>
+            <input id="email" name="email" type="text" placeholder="np. imie.nazwisko@example.com" required />
+            <p class="error" id="emailError" aria-live="polite"></p>
+          </div>
+
+          <div class="form-field">
+            <label for="topic">Temat wiadomości</label>
+            <select id="topic" name="topic">
+              <option value="wspolpraca">Współpraca</option>
+              <option value="pytanie">Pytanie</option>
+              <option value="inne">Inne</option>
+            </select>
+          </div>
+
+          <div class="form-field">
+            <label for="message">Wiadomość</label>
+            <textarea id="message" name="message" rows="6" placeholder="Napisz kilka słów..." required></textarea>
+            <p class="error" id="messageError" aria-live="polite"></p>
+          </div>
+
+          <div class="form-actions">
+            <input class="btn primary" type="submit" value="Wyślij" />
+            <button class="btn" type="reset">Wyczyść</button>
+          </div>
+
+          <div class="alert success" id="formSuccess" role="status" hidden>
+            Wiadomość została wysłana.
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; <span id="year"></span> Kamil Baran</p>
+      <p class="clock" aria-live="polite">Czas: <span id="clockTime"></span></p>
+    </footer>
+  </body>
+</html>

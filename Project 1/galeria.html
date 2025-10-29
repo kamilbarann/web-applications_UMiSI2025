@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Galeria</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./style.css" />
+    <script defer src="index.js"></script>
+    </head>
+    <body>
+        <header class="site-header">
+            <a class="brand" href="index.html">Portfolio</a>
+            <nav class="site-nav" aria-label="Główne">
+                <button id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">
+                    <span class="sr-only">Pokaz/ukryj menu</span> ☰
+                </button>
+                <ul id="nav-menu" class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="galeria.html">Galeria</a></li>
+                    <li><a href="contact.html">Kontakt</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main id="main">
+            <section class="page">
+                <h1>Galeria</h1>
+                <p>To jest strona galerii.</p>
+
+                <section aria-label="Siatka obrazów" class="gallery-grid">
+                    <figure><img src="images/abb-logo.png" alt="ABB" /><figcaption>ABB</figcaption></figure>
+                    <figure><img src="images/capitol.jpg" alt="Capitol" /><figcaption>Capitol</figcaption></figure>
+                    <figure><img src="images/code.avif" alt="Coding" /><figcaption>Coding</figcaption></figure>
+                    <figure><img src="images/ux.jpg" alt="UX" /><figcaption>UX</figcaption></figure>
+                    <figure><img src="images/whagh.png" alt="WH AGH" /><figcaption>WH AGH</figcaption></figure>
+                    <figure><img src="images/aix.jpeg" alt="Aix-en-Provence" /><figcaption>Aix-en-Provence</figcaption></figure>
+            </section>
+
+            <section class="video-section">
+                <h2>Wideo</h2>
+                <video controls width="100%" poster="">
+                    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
+                </video>
+            </section>
+        </section>
+        </main>
+
+        <footer class="site-footer">
+            <p>&copy; <span id="year"></span> Kamil Baran</p>
+            <p class="clock" aria-live="polite">Czas: <span id="clockTime"></span></p>
+        </footer>
+    </body>
+</html>

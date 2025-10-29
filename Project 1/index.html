@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="./style.css"
+    />
+    <script defer src="index.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html">Portfolio</a>
+
+      <nav class="site-nav" aria-label="Główne">
+        <button id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">
+          <span class="sr-only">Pokaz/ukryj menu</span> ☰
+        </button>
+
+        <ul id="nav-menu" class="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="galeria.html">Galeria</a></li>
+          <li><a href="contact.html">Kontakt</a></li>
+        </ul>
+      </nav>
+    </header>
+
+
+    <main id="main">
+      <section class="page">
+        <section class="hero">
+        <div class="hero-txt">
+          <h1>Cześć, jestem Kamil - Data/BI Analyst</h1>
+          <p>Tworzę czytelne dashboardy w Power BI, automatyzuję raportowanie i łączę dane z użytecznym designem. Interesuje mnie NLP oraz analityka danych.</p>
+        </div>
+        </section>
+
+        <section class="about">
+          <h2>O mnie</h2>
+          <p>Na co dzień pracuję z <strong>Power BI</strong>, <strong>SQL</strong> i <strong>Pythonem (Pandas)</strong>. Projektuję model danych, tworzę DAX, dbam o UX raportów i automatyzuję procesy. Szukam prostych rozwiązań, które realnie pomagają podejmować decyzje.</p>
+        </section>
+
+        <section class="skills">
+          <h2>Umiejętności</h2>
+          <ul class="skills-list">
+            <li>Power BI</li>
+            <li>SQL</li>
+            <li>Python (Pandas, Matplotlib, sklearn...)</li>
+            <li>DAX</li>
+            <li>ETL</li>
+            <li>Data Visualization</li>
+            <li>NLP</li>
+          </ul>
+        </section>
+
+        <section class="cta">
+          <h2>Masz temat, o którym chcesz pogadać?</h2>
+          <a class="btn primary" href="contact.html">Skontaktuj się</a>
+        </section>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; <span id="year"></span> Kamil Baran</p>
+      <p class="clock" aria-live="polite">Czas: <span id="clockTime"></span></p>
+    </footer>
+  </body>
+</html>
