@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab 3 - Ćwiczenia</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main class="main-container">
+        
+        <section id="cwiczenie1" class="exercise-section">
+            <h2>Ćwiczenie 1: Stoper</h2>
+            <div id="stoper-display">0s</div>
+            <div class="controls">
+                <button id="startBtn" class="btn start">Start</button>
+                <button id="stopBtn" class="btn stop">Stop</button>
+                <button id="resetBtn" class="btn reset">Reset</button>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="cwiczenie2" class="exercise-section">
+            <h2>Ćwiczenie 2: Generator haseł</h2>
+            <div class="form-group">
+                <label>Min. długość: <input type="number" id="minLength" value="8"></label>
+                <label>Max. długość: <input type="number" id="maxLength" value="12"></label>
+            </div>
+            <div class="form-group">
+                <label><input type="checkbox" id="useCaps"> Wielkie litery</label>
+                <label><input type="checkbox" id="useSpecial"> Znaki specjalne</label>
+            </div>
+            <button id="generateBtn" class="btn">Wygeneruj hasło</button>
+        </section>
+
+        <hr>
+
+        <section id="cwiczenie3" class="exercise-section">
+            <h2>Ćwiczenie 3: Produkty (API)</h2>
+            <div class="filters">
+                <input type="text" id="filterInput" placeholder="Szukaj...">
+                <select id="sortSelect">
+                    <option value="original">Oryginalna kolejność</option>
+                    <option value="asc">Rosnąco (A-Z)</option>
+                    <option value="desc">Malejąco (Z-A)</option>
+                </select>
+            </div>
+            <table id="productsTable">
+                <thead>
+                    <tr>
+                        <th>Zdjęcie</th>
+                        <th>Tytuł</th>
+                        <th>Opis</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    </tbody>
+            </table>
+        </section>
+
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>

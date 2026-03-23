@@ -1,0 +1,41 @@
+###  Rejestracja użytkownika (Users - Port 3003)
+POST http://localhost:3003/api/register
+Content-Type: application/json
+
+{
+  "email": "student2@agh.edu.pl",
+  "password": "haslo123"
+}
+
+###  Logowanie (Users - Port 3003)
+POST http://localhost:3003/api/login
+Content-Type: application/json
+
+{
+  "email": "student2@agh.edu.pl",
+  "password": "haslo123"
+}
+
+### Sprawdzenie książek (Books - Port 3001)
+GET http://localhost:3001/api/books
+
+### Dodaj Książkę (Books - Port 3001)
+POST http://localhost:3001/api/books
+Content-Type: application/json
+
+{
+  "title": "Wiedźmin: Ostatnie Życzenie",
+  "author": "Andrzej Sapkowski",
+  "year": 1993
+}
+
+
+###  Złóż zamówienie (Orders - Port 3002)
+POST http://localhost:3002/api/orders
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjMsImVtYWlsIjoic3R1ZGVudDJAYWdoLmVkdS5wbCIsImlhdCI6MTc2OTYyMDcxNiwiZXhwIjoxNzY5NjI0MzE2fQ.LrOe1F9kpCA4PskElQJ9j4NYtsJI62lI2DIPWV9bPBE
+
+{
+  "bookId": 1,
+  "quantity": 5
+}
